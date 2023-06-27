@@ -1305,6 +1305,13 @@ position: relative;
  
      }
 
+       .right2,.left2{
+        font-size:250%;
+     }  
+
+     #leftside{
+       font-size: 110%;
+     }
      .header,.header2,.side,.side2{
          height: 500px;
 
