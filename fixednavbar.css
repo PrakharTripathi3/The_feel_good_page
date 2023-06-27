@@ -1,0 +1,302 @@
+*{
+    margin: 0%;
+}
+
+
+body{
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    letter-spacing: 1px;
+    margin-left: 1%;
+    gap:0.5em;
+    /* white-space: nowrap; */
+    cursor:grabbing;
+    font-family:"Monoton";
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+    align-items: center;
+    letter-spacing: 1.5px;
+    gap:1em;
+    margin-right: 1%;
+    cursor: pointer;
+    font-family:"Monoton";
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-image:url("starry.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    color:wheat;
+    width:100%;
+    top:0;
+    z-index: 4;
+}
+
+.responsiveheader{
+    display: none;
+}
+
+ .bars{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 9px;
+}
+
+.bar{
+    width:28px;
+    height:5px;
+    background-color: wheat;
+    margin:2px 0px;
+} 
+
+@media(max-width:600px)
+{   
+
+    ul a{
+        width: 100%;
+        color:rgb(8, 4, 30);
+    }
+     ul a:hover{
+        color:rgb(77, 0, 0)
+    }
+        
+        
+
+    .responsiveheader{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-image:url("starry.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60px;
+    color:wheat;
+    width:100%;
+    top:0;
+    z-index: 4;
+    align-items: center;
+    cursor:pointer;
+
+    }
+
+    .logoresponsive{
+        display: flex;
+        width: 30%;
+        justify-content: flex-start;
+        align-items: center;
+        letter-spacing: 1px;
+        margin-left: 1%;
+        gap:0.5em;
+        cursor:grabbing;
+        font-family:"Monoton";
+    }
+
+    .closebars{
+        display: none;
+        width: 5vw;
+        height: 5vh;
+        transform: scale(0.75);
+        margin-right: 2%;
+    } 
+
+    .close{
+        background-color: wheat;
+        width:25px;
+        height:5px;
+        margin:4px 4px;
+
+    }
+
+    .closebar1{
+        transform: translateX(2px)  rotate(45deg);
+    }
+    .closebar2{
+        transform: translate(-12px,-9px)  rotate(-45deg);
+    }
+    .closebar3{
+        transform: translateX(2px)  rotate(45deg);
+    }
+    .closebar4{
+        transform: translate(-12px,-9px)  rotate(-45deg);
+    }
+
+    .desktopheader{
+        display: none;
+    }
+
+    .cover{
+        display: none;
+    }
+  .nav{
+       display: flex;
+       flex-direction: column;
+       height: 41%;
+       justify-content: space-around;
+      align-items: center;
+      width: 100%;
+       padding-bottom: 2%;
+    }
+
+    ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        margin-right: 8%;
+        width: 100%;
+        margin-top: 2%;
+    }
+   .head{
+        width: 100%;
+        text-align: center;
+        padding: 1%;
+}
+.head li{
+    height:100%;
+    padding: 1% 0%;
+}
+    .logo{
+        width: 100%;
+        justify-content: center;
+        gap:0.8em;
+        margin-left: 1%;
+    }
+
+    .head li:hover{
+        background-color: rgb(235, 235, 178);
+        color:crimson;
+    }
+
+    
+   .active {
+        background-color: rgb(214, 214, 190);
+       
+    }
+
+    /* .active a{
+        color:rgb(8, 4, 30);
+    }
+    .active:hover a{
+        color:rgb(77, 0, 0)
+    } */
+
+    #sub{
+        border-bottom: none;
+
+    }
+   
+   #leftside{
+        margin-top: 2%;
+        height:300px;
+    }
+    .left{
+        margin-bottom: 50%;
+        margin-top: 15%;
+        font-size: 2.2em;
+    }
+   
+}
+
+.login{
+    position: relative;
+}
+
+.loginoverlay{
+    position: absolute;
+    bottom:0;
+    height:100%;
+    left:0;
+ width:0%;
+    background-color: rgb(161, 143, 99);
+    transition: 0.35s ease;
+    z-index: -1;
+}
+
+.login:hover{
+    color:aliceblue;
+}
+
+.login:hover .loginoverlay{
+    width: 100%;
+
+
+}
+
+
+
+.subscribe{
+    position: relative;
+    border-bottom: 1px solid wheat;
+    padding-left: 1%;
+}
+
+.subscribeoverlay{
+    position: absolute;
+    bottom:0;
+    height:0%;
+    left:0;
+    right:0;
+    width:100%;
+    background-color: rgb(161, 143, 99);
+    transition: 0.35s ease;
+    z-index: -1;
+}
+
+.subscribe:hover{
+    color:aliceblue;
+}
+
+.subscribe:hover .subscribeoverlay{
+    height: 100%;
+}
+
+
+
+.more{
+    position: relative;
+}
+
+.moreoverlay{
+    position: absolute;
+    bottom:100%;
+    height:0%;
+    left:0;
+    right: 0;
+ width:100%;
+    background-color: rgb(161, 143, 99);
+    transition: 0.35s ease;
+    z-index: -1;
+}
+
+.more:hover{
+    color:aliceblue;
+}
+
+.more:hover .moreoverlay{
+    height: 100%;
+    bottom:0%;
+}
+
+a{
+    text-decoration: none;
+    color:wheat;
+}
+
