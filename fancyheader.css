@@ -1301,9 +1301,19 @@ position: relative;
     }
 
     .right,.another{
-        font-size:400%;
+        font-size:300%;
  
      }
+
+     .header,.header2,.side,.side2{
+         height: 500px;
+
+     }
+
+   
+
+    
+
 }
 
 
