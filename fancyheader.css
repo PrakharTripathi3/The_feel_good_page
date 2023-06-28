@@ -1309,13 +1309,19 @@ position: relative;
         font-size:250%;
      }  
 
-     #leftside{
-       font-size: 105%;
+     #leftside h1{
+       font-size: 300%;
+       overflow: hidden;
      }
      .header,.header2,.side,.side2{
          height: 500px;
 
      }
+
+     #leftside{
+         overflow: hidden;
+     }
+
 
    
 
