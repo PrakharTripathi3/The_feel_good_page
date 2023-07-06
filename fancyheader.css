@@ -25,7 +25,8 @@ body{
 
 }
 #leftside .fancy{
-    color:yellow;
+    color:#ffd500;
+    text-align: center;
 }
 
 .left{
@@ -57,28 +58,29 @@ body{
 
 
 #rightside{
-    background-color: rgb(247, 219, 8);
+    background-color: #ffd500;
     z-index:1;
-
 }
+
+
 .fancy{
-    font-family:"Moirai One";
+    font-family:"Lobster",cursive;
     font-size:1.3em;
     line-height: 0.8em;
 }
 
 
 #rightside .fancy{
-    color:rgb(240, 6, 6);
+    color:blueviolet;
 }
 
 #another{
-    background-color: hotpink;
+    background-color: #2e294e;
     position:relative;
     z-index:-1;
 }
 #another .fancy{
-    color:deepskyblue;
+    color:#e63946;
 
 }
 
@@ -105,7 +107,7 @@ body{
 }
 
 #leftside2{
-    background-color: rgb(255, 0, 0);
+    background-color: #e63946;
     z-index: 1;
 }
 
@@ -116,7 +118,7 @@ body{
 
 }
 .fancy2{
-    font-family:"Tilt Prism";
+    font-family:"Lobster";
     font-size:1.3em;
     line-height: 0.8em;
     
@@ -125,11 +127,11 @@ body{
 
 
 #leftside2 .fancy2{
-    color:rgb(149, 59, 239);
+    color:rgb(9, 177, 228);
 }
 
 #rightside2 .fancy2{
-    color:rgb(240, 6, 6);
+    color:#e63946;
 }
 
 
@@ -150,7 +152,7 @@ border-top: 4px solid rgb(111,7,7);
 border-bottom: 4px solid rgb(111,7,7);
 }
 
-
+/* 
 .movingmoon{
     position: absolute;
     bottom:20%;
@@ -163,15 +165,17 @@ border-bottom: 4px solid rgb(111,7,7);
     animation-timing-function: ease;
     animation-delay: -1s;
     z-index: 1;
-}
+} */
 
 
 .moontitle{
     font-family:"Special Elite";
     color:white;
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
     z-index: 2;
+    word-spacing: 0.8em;
+    line-height: 2.5em;
 }
 
 .container{
@@ -216,7 +220,7 @@ border-bottom: 4px solid rgb(111,7,7);
 }
 
 
-@keyframes motion{
+/* @keyframes motion{
     0%{bottom:0%;left:0%;}
     1%{bottom:1%;left:1%;}
     2%{bottom:2%;left:2%;}
@@ -309,7 +313,7 @@ border-bottom: 4px solid rgb(111,7,7);
 89%{bottom:12%;left:89%;}
 100%{bottom:11%;left:90%;}
     
-}
+} */
 
 .mask{
     overflow:hidden;
@@ -330,6 +334,482 @@ background-repeat: no repeat;
 background-size: cover;
 position: relative;
 }
+
+/*
+Fredericka the Great
+Cinzel Decorative
+Cabin Sketch
+Rock 3D
+Foldit
+Monoton
+Tilt Prism
+Moirai One
+*/
+
+#start{
+    width:100%;
+background-image: url(man-7750139_1280.png);
+background-repeat: no repeat;
+background-size: cover;
+position: relative;
+overflow: hidden;
+height: 265vh;
+display: grid;
+align-content: center;
+/* background-color: #000814; */
+
+}
+.beggining{
+  
+    text-align: center;
+    font-family:"Monoton";
+    color:aliceblue;
+    word-spacing: 1vw;
+    margin:8vw;
+    margin-top: 6vh;
+    font-size: 1.3em;
+    border-left: 2px solid white;
+    border-right: 2px solid rgb(255, 255, 255);
+    position: relative;
+    /* background-color: #003049; */
+    line-height: 1.8em;
+    padding: 12px;
+    transition: transform 0.8s, box-shadow 5s linear;
+    transition: border-color 1s linear;
+}
+
+.beggining:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 0.2em 0.2em 0em whitesmoke;
+    border-color:rgb(21, 113, 219);
+}
+
+.startmain{
+    transition: all 10s linear;
+    font-size:2em;
+    background: linear-gradient(
+        to right, #0af467, #3894c9,
+         #067b18, #5427bd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+}
+
+.startmain:hover{
+    background: linear-gradient(
+        to right, #007bff, #004cff,
+         #295a9f, #03c0ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#start p{
+    margin:2vw;
+    margin-top: 10vh;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding:1vh;
+    line-height: 2em;
+   font-family: "Montserrat";
+     background-color: #85BAA1BA;
+    transition: all 0.2s linear;
+    color:whitesmoke;
+} 
+#start p:hover{
+border-color: aliceblue;
+border-width:4px;
+transform: translateY(-4px);
+color:rgb(239, 254, 255);
+box-shadow: 0 0.1em 0.2em 0em whitesmoke;
+}
+
+
+
+.overhakuna{
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);
+font-size:1.3em;
+word-spacing: 0.5em;
+color:white;
+line-height: 1.8em;
+text-align: center;
+/* background-image: url(stars.png); */
+ height: 330vh; 
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(160px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .hakunaexplore{
+      font-family: "Pacifico";
+      font-size: 4em;
+      transform: rotate(-3deg) translateY(-15px);
+      width: 60vw;
+      margin: auto;
+      color:aliceblue;
+
+    }
+
+    #start img{
+        width:70vw;
+        height: 72vh;
+    }
+   
+
+.creators{
+    width:100%;
+    background-color: rgb(238, 182, 78);
+    overflow: hidden;
+    height: 20vh;
+    display: grid;
+    align-content: center;
+}
+
+.creators p{
+    font-family: Cabin Sketch;
+    color:rgb(113, 62, 21);
+    text-align: center;
+    font-size: 4em;
+}
+
+#plethora{
+    display: none;
+    position: fixed;
+    overflow: hidden;
+    background-image: url(mountains-5689938_1280.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    top:0;
+    z-index: 4;
+}
+
+#plethora h2{
+margin-top:4vw;
+margin-bottom:2vw;
+text-align: center;
+font-size: 2em;
+font-family: "Monoton";
+word-spacing: 1em;
+color:aliceblue;
+margin: auto;
+width: 50vw;
+
+}
+
+.arrow{
+    margin-top: 10px;
+}
+
+.arrow:hover{
+    cursor: pointer;
+}
+.arrow2{
+ margin-right:-50px;
+
+}
+
+
+.jelly{
+    position: relative;
+}
+
+.jelly::before{
+content: '';
+position: absolute;
+left: 50%;
+bottom: 0;
+width: 100%;
+height: 2px;
+background-color: #CAF0F8;
+transform-origin: center;
+transform: translate(-50%, 0) scaleX(0);
+transition: transform 0.5s ease-in-out;
+}
+.jelly:hover::before{
+    transform: translate(-50%, 0) scaleX(1);
+}
+
+.jelly:hover{
+    color:#EFF6E0
+}
+
+.options{
+    width:100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(3,220px);
+    grid-template-columns: repeat(4,380px);
+    justify-items: center;
+    align-items: center;
+    font-family:"Cinzel Decorative" ;
+
+}
+
+
+
+.menu{
+    position: relative;
+    font-size: 1.9em;
+    color:aliceblue;
+    /* filter: blur(2px); */
+}
+.menu::before, .menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #CAF0F8;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .menu::before {
+    top: 0;
+    transform-origin: center right;
+  }
+  
+  .menu:hover::before {
+    transform-origin: center left;
+    transform: scaleX(1);
+  }
+  
+.menu::after {
+    bottom: 0;
+    transform-origin: center left;
+  }
+  
+  .menu:hover::after {
+    transform-origin: center right;
+    transform: scaleX(1);
+    
+  }
+  .menu:hover{
+    transform: translate(5px,-5px);
+    cursor: pointer;
+    background: linear-gradient(
+        to right, #05d7ef, #127faa,
+         #0c719f, #03c0ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+  }
+
+
+ .covering{
+    background-color: rgba(0,0,0,0.9);
+    height: 120vh;
+    position: absolute;
+} 
+
+
+@media(max-width:600px){
+    #leftside{
+        padding-top: 45%;
+        font-size: 2.5vw;
+        height: 65vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right,.another{
+        font-size:300%;
+ 
+     }
+
+       .right2,.left2{
+        font-size:250%;
+     }  
+
+     #leftside h1{
+       font-size: 300%;
+       overflow: hidden;
+     }
+     .header,.header2,.side,.side2{
+         height: 500px;
+
+     }
+
+     #leftside{
+         overflow: hidden;
+     }
+
+
+   
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .foots{
@@ -1197,31 +1677,33 @@ position: relative;
      }
 }  
 
-.simba{
-    top:15%;
-    left:10%;
-}
+
 .pumba{
-    top:15%;
+    top:10%;
     right:10%;
 }
 .timon{
-    top:35%;
+    top:55%;
     right:10%;
 }
 .cast{
-    width:5vw;
-    height:10vh;
+    width:15vw;
+    height:30vh;
     position: absolute;
+    opacity: 0.8;
     z-index: 1;
 }
-
+.simba{
+    top:15%;
+    left:10%;
+   
+    height: 50vh;
+    width: 40vh;
+}
 
 .text {
     position: absolute;
-    
-
-}
+    }
 
 #written{
     font-family:"Cabin Sketch";
@@ -1229,7 +1711,7 @@ position: relative;
 
 }
 
-.hakuna{
+/* .hakuna{
     top:40%;
     left:28%;
     font-size: 4vw;
@@ -1243,9 +1725,9 @@ position: relative;
    background-color: rgba(255, 255, 255, 0.1);
    
     
-}
+} */
 
-@keyframes hakuna{
+/* @keyframes hakuna{
     0%{
         opacity: 0;
     }
@@ -1258,23 +1740,23 @@ position: relative;
     }
 
     
-}
+} */
 
 
-#matata{
+/* #matata{
     font-family:"Fredericka the Great";
-}
+} */
 
 .simbatext{
-    top:52%;
-    left:10%;
+    top:79%;
+    left:20vw;
 }
 .pumbatext{
-    top:4%;
+    top:1%;
     right:10%;
 }
 .timontext{
-    top:70%;
+    top:91%;
     right:10%;
 }
 .sand{
@@ -1282,51 +1764,8 @@ position: relative;
     position: relative;
 }
 
-.moond{
+/* .moond{
     height:500px;
     width: 100%;
 
-}
-
-
-
-@media(max-width:600px){
-    #leftside{
-        padding-top: 45%;
-        font-size: 2.5vw;
-        height: 65vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .right,.another{
-        font-size:300%;
- 
-     }
-
-       .right2,.left2{
-        font-size:250%;
-     }  
-
-     #leftside h1{
-       font-size: 300%;
-       overflow: hidden;
-     }
-     .header,.header2,.side,.side2{
-         height: 500px;
-
-     }
-
-     #leftside{
-         overflow: hidden;
-     }
-
-
-   
-
-    
-
-}
-
-
+} */
